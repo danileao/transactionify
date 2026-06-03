@@ -30,7 +30,6 @@
     "@modelcontextprotocol/sdk": "^1.17.5",
     "aws-cdk-lib": "^2.168.0",
     "constructs": "^10.3.0",
-    "node-fetch": "^3.3.2",
-    "devex-framework": "git+https://github.com/danileao/gilla.git#subdirectory=devex-framework"
+    "node-fetch": "^3.3.2"
   }
 }
