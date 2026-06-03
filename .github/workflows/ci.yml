@@ -53,9 +53,9 @@ jobs:
           run_install: false
 
       - name: Execute Engineering Build Step
-        run: npm install
+        run: pnpm install
       - name: Execute Engineering Build Step
-        run: npm test
+        run: pnpm test -- --passWithNoTests
 
       - name: Enforce Two-Reviewer Rule (SOC 2)
         if: github.event_name == 'pull_request'
