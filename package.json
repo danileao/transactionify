@@ -14,7 +14,8 @@
     "cdk:build": "npx tsc",
     "cdk:watch": "npx tsc -w",
     "cdk:synth": "npx cdk synth",
-    "cicd:synth": "npm run build && npm run cdk:synth"
+    "cicd:synth": "npm run build && npm run cdk:synth",
+    "devex-framework": "devex-framework"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
@@ -29,6 +30,7 @@
     "@modelcontextprotocol/sdk": "^1.17.5",
     "aws-cdk-lib": "^2.168.0",
     "constructs": "^10.3.0",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "devex-framework": "file:/Users/daniele/desenvolvimento/interview/gilla/devex-framework"
   }
 }
