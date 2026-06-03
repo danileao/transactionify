@@ -55,7 +55,7 @@ jobs:
       - name: Execute Engineering Build Step
         run: pnpm install
       - name: Execute Engineering Build Step
-        run: pnpm test -- --passWithNoTests
+        run: pnpm test
 
       - name: Enforce Two-Reviewer Rule (SOC 2)
         if: github.event_name == 'pull_request'
@@ -100,7 +100,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
       - name: Unit Tests
-        run: pnpm test:ci
+        run: pnpm test
       - name: Property-Based Testing
         run: pnpm test:pbt
       - name: API Contract Validation
