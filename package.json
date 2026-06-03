@@ -8,13 +8,14 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "cdk": "cdk",
     "cdk:version": "npx cdk --version",
     "cdk:build": "npx tsc",
     "cdk:watch": "npx tsc -w",
     "cdk:synth": "npx cdk synth",
-    "cicd:synth": "npm run build && npm run cdk:synth"
+    "cicd:synth": "npm run build && npm run cdk:synth",
+    "devex-framework": "devex-framework"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",

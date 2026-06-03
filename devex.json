@@ -1,0 +1,33 @@
+{
+    "name": "My App",
+    "environment": "production",
+    "buildSteps": [
+        "pnpm install",
+        "pnpm test -- --passWithNoTests"
+    ],
+    "governance": {
+        "enforceWorkId": true,
+        "requiredApprovals": 2,
+        "teamOwner": "MY_TEAM"
+    },
+    "environments": {
+        "sandbox": {
+            "accountId": "111111111111",
+            "region": "us-east-1"
+        },
+        "staging": {
+            "accountId": "222222222222",
+            "region": "us-east-2"
+        },
+        "production": {
+            "accountId": "333333333333",
+            "region": "us-west-2"
+        }
+    },
+    "cliSource": "git+https://github.com/danileao/gilla.git#subdirectory=devex-cli",
+    "testStages": {
+        "unit": "pnpm test:ci",
+        "pbt": "pnpm test:pbt",
+        "contract": "pnpm test:contract"
+    }
+}
