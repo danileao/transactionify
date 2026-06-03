@@ -18,8 +18,8 @@ importers:
         specifier: ^10.3.0
         version: 10.6.0
       devex-framework:
-        specifier: file:/Users/daniele/desenvolvimento/interview/gilla/devex-framework
-        version: file:../../gilla/devex-framework
+        specifier: fgit+https://github.com/danileao/gilla.git#subdirectory=devex-framework
+        version: link:fgit+https:/github.com/danileao/gilla.git#subdirectory=devex-framework
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
@@ -669,10 +669,6 @@ packages:
   detect-newline@3.1.0:
     resolution: {integrity: sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==}
     engines: {node: '>=8'}
-
-  devex-framework@file:../../gilla/devex-framework:
-    resolution: {directory: ../../gilla/devex-framework, type: directory}
-    hasBin: true
 
   diff-sequences@29.6.3:
     resolution: {integrity: sha512-EjePK1srD3P08o2j4f0ExnylqRs5B9tJjcp9t1krH2qRi8CCdsYfwe9JgSLurFBWwq4uOlipzfk5fHNvwFKr8Q==}
@@ -2394,8 +2390,6 @@ snapshots:
   depd@2.0.0: {}
 
   detect-newline@3.1.0: {}
-
-  devex-framework@file:../../gilla/devex-framework: {}
 
   diff-sequences@29.6.3: {}
 
